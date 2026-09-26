@@ -1,0 +1,1 @@
+export default function Privacy(){return <div className="container-page py-20"><h1 className="text-5xl">Privacy Policy</h1><p className="body-copy mt-6 max-w-3xl">Editable placeholder: publish the photographer’s actual privacy policy before launch, including how enquiry data, analytics and any booking information are handled.</p></div>}

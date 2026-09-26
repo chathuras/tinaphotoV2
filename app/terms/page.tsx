@@ -1,0 +1,1 @@
+export default function Terms(){return <div className="container-page py-20"><h1 className="text-5xl">Terms</h1><p className="body-copy mt-6 max-w-3xl">Editable placeholder: add confirmed booking, cancellation, weather, delivery, usage-rights and payment terms before launch.</p></div>}
