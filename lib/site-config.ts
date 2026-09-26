@@ -39,10 +39,10 @@ export const services = [
     href: '/kimono-photoshoot-tokyo'
   },
   {
-    slug: 'night',
-    title: 'Tokyo Night Photoshoots',
-    copy: 'Cinematic city portraits shaped around Tokyo lights and modern urban atmosphere.',
+    slug: 'proposal',
+    title: 'Proposal Photoshoots',
+    copy: 'Discreet photography for surprise proposals and newly engaged couples in Tokyo.',
     image: '',
-    href: '/tokyo-night-photoshoot'
+    href: '/tokyo-proposal-photographer'
   }
 ] as const

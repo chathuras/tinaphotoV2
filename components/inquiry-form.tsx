@@ -1,7 +1,7 @@
 'use client'
 import { FormEvent, useState } from 'react'
 
-const types=['Birthday','Event','Wedding Pre-Shoot','Kimono','Tokyo Night','Couple','Family','Portrait','Other']
+const types=['Birthday','Event','Wedding Pre-Shoot','Kimono','Proposal','Couple','Family','Portrait','Other']
 export function InquiryForm({compact=false}:{compact?:boolean}){
  const [state,setState]=useState<'idle'|'sending'|'success'|'error'>('idle')
  async function submit(e:FormEvent<HTMLFormElement>){

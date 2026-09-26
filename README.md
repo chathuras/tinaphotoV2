@@ -18,7 +18,7 @@ Then open `http://localhost:3000`.
 3. Add real Instagram and WhatsApp URLs when available.
 4. Configure `NEXT_PUBLIC_INQUIRY_URL` to a form handler, CRM, automation endpoint, or serverless function that accepts JSON requests from the website. GitHub Pages cannot host the former server-side API route, so the form shows an error until this external endpoint is configured.
 5. Replace placeholder biography, verified testimonials, FAQ policies, privacy policy and terms with confirmed business information.
-6. Add at least one genuine Tokyo night portfolio photograph before using night imagery in the gallery. The current UI intentionally uses a styled placeholder rather than misrepresenting another photo.
+6. Add at least one genuine proposal portfolio photograph before using proposal imagery in the gallery. The current UI intentionally uses a styled placeholder rather than misrepresenting another photo.
 7. Add confirmed pricing only when supplied.
 
 ## SEO included
