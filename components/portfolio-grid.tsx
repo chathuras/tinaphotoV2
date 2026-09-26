@@ -13,11 +13,11 @@ const portfolioItems=[
 ]
 export function PortfolioGrid({compact=false}:{compact?:boolean}){
  const [active,setActive]=useState<number|null>(null)
- const items=compact?portfolioItems.slice(0,5):portfolioItems
+ const items=portfolioItems
  return <>
-  <div className={`grid gap-4 ${compact?'sm:grid-cols-2 lg:grid-cols-5':'sm:grid-cols-2 lg:grid-cols-3'}`}>
+  <div className={`grid gap-4 ${compact?'sm:grid-cols-3':'sm:grid-cols-2 lg:grid-cols-3'}`}>
    {items.map((item,i)=><button key={item.category} onClick={()=>setActive(i)} className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-blush text-left" aria-label={`Open ${item.category} photograph`}>
-    <Image src={item.src} alt={item.alt} fill sizes={compact?'(min-width:1024px) 20vw,45vw':'(min-width:1024px) 33vw,50vw'} className="object-cover transition duration-700 group-hover:scale-[1.02]" loading={i>1?'lazy':'eager'} />
+    <Image src={item.src} alt={item.alt} fill sizes={compact?'(min-width:640px) 33vw,100vw':'(min-width:1024px) 33vw,50vw'} className="object-cover transition duration-700 group-hover:scale-[1.02]" loading={i>1?'lazy':'eager'} />
     <span className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold backdrop-blur">{item.category}</span>
    </button>)}
   </div>
