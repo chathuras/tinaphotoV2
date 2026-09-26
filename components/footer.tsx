@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { siteConfig } from '@/lib/site-config'
+import { assetPath, siteConfig } from '@/lib/site-config'
 import { InstagramIcon } from './icons'
 
 export function Footer() {
   return <footer className="border-t border-black/5 bg-white">
     <div className="container-page grid gap-10 py-12 md:grid-cols-[1.2fr_.8fr_.8fr]">
       <div>
-        <div className="relative h-16 w-52"><Image src="/images/tina-logo.jpeg" alt="TINA Photo Solutions" fill sizes="208px" className="object-contain object-left mix-blend-multiply" /></div>
+        <div className="relative h-16 w-52"><Image src={assetPath('/images/tina-logo.jpeg')} alt="TINA Photo Solutions" fill sizes="208px" className="object-contain object-left mix-blend-multiply" /></div>
         <p className="mt-4 max-w-sm text-sm leading-6 text-muted">Personal and event photography in Tokyo for visitors, couples, families and special occasions.</p>
         <p className="mt-4 text-sm font-medium">Tokyo, Japan</p>
       </div>

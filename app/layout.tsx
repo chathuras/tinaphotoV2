@@ -11,8 +11,8 @@ export const metadata: Metadata = {
  title:{default:'Tokyo Photographer | Couples, Kimono, Events & Portraits | TINA Photo Solutions',template:'%s | TINA Photo Solutions'},
  description:'Book a professional Tokyo photoshoot with TINA Photo Solutions. Photography for couples, families, kimono sessions, birthdays, events, wedding pre-shoots and Tokyo portraits.',
  alternates:{canonical:'/'},
- openGraph:{type:'website',locale:'en_US',siteName:'TINA Photo Solutions',title:'Tokyo Photographer | TINA Photo Solutions',description:'Professional photography for couples, families, visitors and special occasions across Tokyo.',images:[{url:'/images/couple-prewedding.jpeg',width:1363,height:2047,alt:'Tokyo couple photography by TINA Photo Solutions'}]},
- twitter:{card:'summary_large_image',title:'Tokyo Photographer | TINA Photo Solutions',description:'Professional photography for couples, families, visitors and events in Tokyo.',images:['/images/couple-prewedding.jpeg']}
+ openGraph:{type:'website',locale:'en_US',siteName:'TINA Photo Solutions',title:'Tokyo Photographer | TINA Photo Solutions',description:'Professional photography for couples, families, visitors and special occasions across Tokyo.',images:[{url:`${siteConfig.siteUrl}/images/couple-prewedding.jpeg`,width:1363,height:2047,alt:'Tokyo couple photography by TINA Photo Solutions'}]},
+ twitter:{card:'summary_large_image',title:'Tokyo Photographer | TINA Photo Solutions',description:'Professional photography for couples, families, visitors and events in Tokyo.',images:[`${siteConfig.siteUrl}/images/couple-prewedding.jpeg`]}
 }
 
 export default function RootLayout({children}:{children:React.ReactNode}){

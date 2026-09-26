@@ -5,8 +5,8 @@ Production-oriented Next.js + TypeScript + Tailwind implementation built from th
 ## Run locally
 
 ```bash
-npm install
-npm run dev
+corepack yarn install
+corepack yarn dev
 ```
 
 Then open `http://localhost:3000`.
@@ -16,7 +16,7 @@ Then open `http://localhost:3000`.
 1. Copy `.env.example` to `.env.local`.
 2. Set `NEXT_PUBLIC_SITE_URL` to the final HTTPS domain.
 3. Add real Instagram and WhatsApp URLs when available.
-4. Configure `INQUIRY_FORWARD_URL` to a secure form handler, CRM, automation endpoint, or serverless function. Without it, the API intentionally returns a setup error so the live site never tells a customer that an enquiry was sent when it was not.
+4. Configure `NEXT_PUBLIC_INQUIRY_URL` to a form handler, CRM, automation endpoint, or serverless function that accepts JSON requests from the website. GitHub Pages cannot host the former server-side API route, so the form shows an error until this external endpoint is configured.
 5. Replace placeholder biography, verified testimonials, FAQ policies, privacy policy and terms with confirmed business information.
 6. Add at least one genuine Tokyo night portfolio photograph before using night imagery in the gallery. The current UI intentionally uses a styled placeholder rather than misrepresenting another photo.
 7. Add confirmed pricing only when supplied.
@@ -48,3 +48,7 @@ Then open `http://localhost:3000`.
 - `cherry-blossom-portrait.jpeg` — portrait / seasonal Tokyo
 - `birthday-family.jpeg` — birthday / family
 - `promo-reference.jpeg` — supplied promotional artwork retained as a reference asset, not used as portfolio imagery
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the static site whenever `main` is pushed. In the repository settings, set **Pages → Source** to **GitHub Actions**. Add `NEXT_PUBLIC_INQUIRY_URL` as a repository Actions variable if the enquiry form should submit on the deployed site.

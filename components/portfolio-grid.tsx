@@ -1,13 +1,14 @@
 'use client'
 import Image from 'next/image'
+import { assetPath } from '@/lib/site-config'
 import { useState } from 'react'
 
 const items=[
- {src:'/images/couple-prewedding.jpeg',alt:'Couple portrait photographed in a green Tokyo setting',category:'Couples'},
- {src:'/images/kimono-tokyo.jpeg',alt:'Kimono portrait with a traditional Tokyo landmark in the background',category:'Kimono'},
- {src:'/images/cherry-blossom-portrait.jpeg',alt:'Seasonal portrait among cherry blossoms in Tokyo',category:'Portraits'},
- {src:'/images/birthday-family.jpeg',alt:'Baby birthday portrait at an indoor celebration',category:'Birthdays & Families'},
- {src:'/images/event-photography.jpeg',alt:'Guests photographed during a dinner event',category:'Events'},
+ {src:assetPath('/images/couple-prewedding.jpeg'),alt:'Couple portrait photographed in a green Tokyo setting',category:'Couples'},
+ {src:assetPath('/images/kimono-tokyo.jpeg'),alt:'Kimono portrait with a traditional Tokyo landmark in the background',category:'Kimono'},
+ {src:assetPath('/images/cherry-blossom-portrait.jpeg'),alt:'Seasonal portrait among cherry blossoms in Tokyo',category:'Portraits'},
+ {src:assetPath('/images/birthday-family.jpeg'),alt:'Baby birthday portrait at an indoor celebration',category:'Birthdays & Families'},
+ {src:assetPath('/images/event-photography.jpeg'),alt:'Guests photographed during a dinner event',category:'Events'},
 ]
 export function PortfolioGrid({compact=false}:{compact?:boolean}){
  const [active,setActive]=useState<number|null>(null)
