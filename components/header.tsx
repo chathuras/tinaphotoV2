@@ -15,7 +15,7 @@ export function Header() {
   return <header className="sticky top-0 z-50 border-b border-black/5 bg-cream/90 backdrop-blur-xl">
     <div className="container-page flex h-[122px] items-center justify-between gap-5">
       <Link href="/" className="relative h-24 w-80 shrink-0" aria-label="TINA Photo Solutions home">
-        <Image src={assetPath('/images/tina-logo.jpeg')} alt="TINA Photo Solutions" fill sizes="320px" className="object-contain object-left mix-blend-multiply" priority />
+        <Image src={assetPath('/images/tina-logo-transparent.png')} alt="TINA Photo Solutions" fill sizes="320px" className="object-fill" priority />
       </Link>
       <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary navigation">
         {nav.map(([label,href]) => <Link key={label} href={href} className="text-sm font-medium text-ink/75 transition hover:text-brand">{label}</Link>)}
